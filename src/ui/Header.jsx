@@ -3,12 +3,14 @@ import SearchOrder from '../features/order/SearchOrder';
 
 function Header() {
 	return (
-		<div>
-			<Link to="/">Fast Pizza co.</Link>
-			<SearchOrder />
-			<p>aashish & co.</p>
-		</div>
-	);
+    <header className="bg-yellow-500 uppercase">
+      <Link to="/" className="tracking-[5px]">
+        Fast Pizza co.
+      </Link>
+      <SearchOrder />
+      <p>aashish & co.</p>
+    </header>
+  );
 }
 
 export default Header;
