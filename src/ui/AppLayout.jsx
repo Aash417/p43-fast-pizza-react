@@ -8,17 +8,17 @@ function AppLayout() {
 	const isLoading = navigation.state === 'loading';
 
 	return (
-		<div className="layout">
-			{isLoading && <Loader />}
+    <div className="layout">
+      {isLoading && <Loader />}
 
-			<Header />
-			<main>
-				<h1>Contet</h1>
-				<Outlet />
-			</main>
-			<CartOverview />
-		</div>
-	);
+      <Header />
+      <main>
+        <h1>Content</h1>
+        <Outlet />
+      </main>
+      <CartOverview />
+    </div>
+  );
 }
 
 export default AppLayout;
